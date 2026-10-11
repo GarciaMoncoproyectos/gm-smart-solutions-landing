@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Smart Solutions | Automatización y software a medida</title>
+    <meta name="description" content="GM Smart Solutions ayuda a PYMES a automatizar procesos, integrar IA y desarrollar software a medida para ahorrar tiempo y dinero.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#172554'
+                        }
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(37,99,235,0.12)',
+                        premium: '0 30px 60px rgba(37,99,235,0.18)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-20 items-center justify-between">
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-3 font-bold text-xl text-brand-700">
+                    <span class="text-2xl">⚙️</span> GM Smart Solutions
+                </a>
+
+                <!-- Menu Desktop -->
+                <div class="hidden items-center gap-8 md:flex">
+                    <a href="#problema" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition">Problema</a>
+                    <a href="#metodo" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition">Método</a>
+                    <a href="#servicios" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition">Servicios</a>
+                    <a href="#casos" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition">Casos</a>
+                    <a href="#contacto" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition">Contacto</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/34694258700" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-700">
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <!-- HERO SECTION -->
+        <section class="relative overflow-hidden bg-white">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.15),_transparent_34%),radial-gradient(circle_at_bottom_right,_rgba(96,165,250,0.12),_transparent_28%)]"></div>
+
+            <div class="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+                <div class="flex flex-col justify-center fade-in">
+                    <span class="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-brand-700">
+                        ⚡ Soluciones para PYMES que quieren crecer
+                    </span>
+
+                    <h1 class="max-w-xl text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                        Recupera tiempo, elimina fricción y multiplica rentabilidad.
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+                        En <span class="font-semibold text-slate-900">GM Smart Solutions</span> ayudamos a empresas con mucha carga administrativa a automatizar procesos, integrar IA y desarrollar software a medida en PHP para que su equipo deje de perder tiempo en tareas repetitivas.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <a href="https://wa.me/34694258700" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-soft transition hover:bg-brand-700 hover:shadow-premium">
+                            🚀 Solicitar Auditoría Gratuita
+                        </a>
+                        <a href="#metodo"
+                           class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-700 hover:border-brand-300 hover:text-brand-700 transition">
+                            Ver cómo trabajamos
+                        </a>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap items-center gap-6 text-sm text-slate-500">
+                        <div class="flex items-center gap-2">
+                            <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                            Automatización real
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                            Consultoría in situ
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                            Soluciones a medida
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE - STATS CARD -->
+                <div class="relative">
+                    <div class="absolute -left-8 top-8 h-40 w-40 rounded-full bg-brand-100 blur-3xl"></div>
+                    <div class="absolute -right-6 bottom-10 h-32 w-32 rounded-full bg-blue-100 blur-3xl"></div>
+
+                    <div class="relative rounded-[28px] border border-slate-200 bg-white p-5 shadow-premium">
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-medium text-slate-500">Impacto real demostrado</p>
+                                    <h2 class="mt-1 text-3xl font-bold text-slate-900">+35%</h2>
+                                </div>
+                                <div class="rounded-2xl bg-brand-100 p-3 text-brand-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 space-y-4">
+                                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                                    <div class="flex items-center justify-between text-sm">
+                                        <span class="font-medium text-slate-600">Procesos manuales hoy</span>
+                                        <span class="font-bold text-slate-900">68%</span>
+                                    </div>
+                                    <div class="mt-3 h-2.5 rounded-full bg-slate-100">
+                                        <div class="h-2.5 w-[68%] rounded-full bg-red-500"></div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                                    <div class="flex items-center justify-between text-sm">
+                                        <span class="font-medium text-slate-600">Tiempo recuperado</span>
+                                        <span class="font-bold text-slate-900">+14h/sem</span>
+                                    </div>
+                                    <div class="mt-3 h-2.5 rounded-full bg-slate-100">
+                                        <div class="h-2.5 w-[85%] rounded-full bg-emerald-500"></div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                                    <div class="flex items-center justify-between text-sm">
+                                        <span class="font-medium text-slate-600">Reducción de errores</span>
+                                        <span class="font-bold text-slate-900">-92%</span>
+                                    </div>
+                                    <div class="mt-3 h-2.5 rounded-full bg-slate-100">
+                                        <div class="h-2.5 w-[92%] rounded-full bg-brand-600"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                            <div class="rounded-2xl border border-brand-100 bg-brand-50 p-4">
+                                <p class="text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-700">✓ Auditoría</p>
+                                <p class="mt-2 text-sm text-slate-600">4 horas presenciales para analizar tu operativa.</p>
+                            </div>
+
+                            <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+                                <p class="text-[11px] font-semibold uppercase tracking-[0.12em] text-emerald-700">✓ Resultado</p>
+                                <p class="mt-2 text-sm text-slate-600">Solución personalizada sin plantillas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMA SECTION -->
+        <section id="problema" class="bg-slate-50 py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">El problema</p>
+                    <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+                        ¿Cuántas horas pierde tu equipo cada semana en tareas repetitivas?
+                    </h2>
+                    <p class="mt-5 text-lg text-slate-600">
+                        Muchas PYMES trabajan con procesos manuales, duplicados y desorganizados. Ese tiempo no crea valor, pero consume energía, dinero y capacidad de crecimiento.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid gap-6 lg:grid-cols-3">
+                    <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm hover:shadow-soft transition">
+                        <div class="mb-5 inline-flex rounded-2xl bg-red-100 p-3 text-red-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Tiempo perdido</h3>
+                        <p class="mt-3 text-slate-600">
+                            Facturas, validaciones, seguimientos y tareas administrativas que se repiten sin necesidad.
+                        </p>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm hover:shadow-soft transition">
+                        <div class="mb-5 inline-flex rounded-2xl bg-orange-100 p-3 text-orange-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Errores costosos</h3>
+                        <p class="mt-3 text-slate-600">
+                            Cuando dependes de tareas manuales, aumenta la probabilidad de retrasos, errores e información perdida.
+                        </p>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm hover:shadow-soft transition">
+                        <div class="mb-5 inline-flex rounded-2xl bg-yellow-100 p-3 text-yellow-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Pérdida de margen</h3>
+                        <p class="mt-3 text-slate-600">
+                            El tiempo en lo repetitivo no se puede dedicar a vender, atender clientes o mejorar la operación.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 rounded-3xl border border-brand-200 bg-brand-50 p-8">
+                    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                        <div class="max-w-2xl">
+                            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">💡 La verdad</p>
+                            <h3 class="mt-3 text-2xl font-black text-slate-900">
+                                Muchas empresas no necesitan más esfuerzo; necesitan procesos más inteligentes.
+                            </h3>
+                        </div>
+                        <a href="https://wa.me/34694258700" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700 whitespace-nowrap">
+                            Auditoría gratuita
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MÉTODO SECTION -->
+        <section id="metodo" class="bg-white py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">Nuestro método</p>
+                    <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+                        Un proceso claro, práctico y orientado a resultados.
+                    </h2>
+                </div>
+
+                <div class="mt-12 grid gap-8 lg:grid-cols-3">
+                    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+                        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-600 text-lg font-bold text-white">1</div>
+                        <h3 class="text-2xl font-bold text-slate-900">Auditoría in situ</h3>
+                        <p class="mt-4 text-base text-slate-600">
+                            Realizamos una reunión presencial de 4 horas en tu empresa para entender cómo funciona la operación en la práctica.
+                        </p>
+                        <div class="mt-6 rounded-2xl border border-brand-200 bg-white p-3 text-sm font-medium text-brand-700">
+                            🔑 Aquí identificamos la raíz del problema, no solo síntomas.
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+                        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-600 text-lg font-bold text-white">2</div>
+                        <h3 class="text-2xl font-bold text-slate-900">Diseñamos la solución</h3>
+                        <p class="mt-4 text-base text-slate-600">
+                            Analizamos qué procesos conviene automatizar, qué reestructurar y qué tecnologías encajan mejor con tu negocio.
+                        </p>
+                        <div class="mt-6 rounded-2xl border border-brand-200 bg-white p-3 text-sm font-medium text-brand-700">
+                            📋 Una propuesta hecha solo para ti.
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+                        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-600 text-lg font-bold text-white">3</div>
+                        <h3 class="text-2xl font-bold text-slate-900">Desarrollo e implantación</h3>
+                        <p class="mt-4 text-base text-slate-600">
+                            Construimos la solución, la implementamos y la afinamos para que te aporte ahorro de tiempo y mejor rendimiento real.
+                        </p>
+                        <div class="mt-6 rounded-2xl border border-emerald-200 bg-white p-3 text-sm font-medium text-emerald-700">
+                            🚀 Tu sistema personalizado, operativo y escalable.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS SECTION -->
+        <section id="servicios" class="bg-slate-50 py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">Servicios</p>
+                    <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+                        Soluciones diseñadas para eliminar fricción operativa.
+                    </h2>
+                </div>
+
+                <div class="mt-12 grid gap-8 lg:grid-cols-2">
+                    <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-soft transition">
+                        <div class="mb-6 inline-flex rounded-2xl bg-brand-100 p-3.5 text-brand-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4V7m-9 10h12a2 2 0 002-2V8a2 2 0 00-2-2H6a2 2 0 00-2 2v7a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Automatización de tareas</h3>
+                        <p class="mt-4 text-slate-600">
+                            Diseñamos automatizaciones para eliminar repetición, reducir errores y liberar tiempo para tareas con mayor valor.
+                        </p>
+                        <ul class="mt-6 space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brand-600"></span>
+                                Automatización de procesos operativos
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brand-600"></span>
+                                Integración de sistemas y herramientas
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brand-600"></span>
+                                Reducción de carga administrativa
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-soft transition">
+                        <div class="mb-6 inline-flex rounded-2xl bg-brand-100 p-3.5 text-brand-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Software a medida en PHP</h3>
+                        <p class="mt-4 text-slate-600">
+                            Desarrollamos soluciones específicas para cada empresa, no plantillas que no encajan con tu manera de trabajar.
+                        </p>
+                        <ul class="mt-6 space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brand-600"></span>
+                                Apps internas y herramientas especializadas
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brand-600"></span>
+                                Integración de IA para optimización
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-brand-600"></span>
+                                Soluciones escalables y sostenibles
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASOS SECTION -->
+        <section id="casos" class="bg-white py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">Casos de uso</p>
+                    <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+                        Los problemas que más repetimos en PYMES.
+                    </h2>
+                </div>
+
+                <div class="mt-12 grid gap-6 md:grid-cols-2">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:bg-slate-100 transition">
+                        <p class="text-sm font-semibold text-brand-700">📊 Gestión comercial</p>
+                        <h3 class="mt-2 text-xl font-bold text-slate-900">Reportes manuales que consumían horas</h3>
+                        <p class="mt-3 text-slate-600">
+                            Automatizamos la extracción y consolidación de datos para que el equipo dejara de perder tiempo.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:bg-slate-100 transition">
+                        <p class="text-sm font-semibold text-brand-700">💰 Facturación</p>
+                        <h3 class="mt-2 text-xl font-bold text-slate-900">Errores en procesos de cobro</h3>
+                        <p class="mt-3 text-slate-600">
+                            Generación automática de facturas, validación y flujo de control para reducir errores.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:bg-slate-100 transition">
+                        <p class="text-sm font-semibold text-brand-700">💬 Atención al cliente</p>
+                        <h3 class="mt-2 text-xl font-bold text-slate-900">Seguimiento manual y lento</h3>
+                        <p class="mt-3 text-slate-600">
+                            Automatización de mensajes y priorización para dar respuesta más rápida.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:bg-slate-100 transition">
+                        <p class="text-sm font-semibold text-brand-700">📦 Operación interna</p>
+                        <h3 class="mt-2 text-xl font-bold text-slate-900">Falta de coordinación entre áreas</h3>
+                        <p class="mt-3 text-slate-600">
+                            Solución integrada para unificar información y poner orden en procesos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="bg-slate-50 py-20">
+            <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+                <div class="rounded-[2rem] border border-slate-300 bg-gradient-to-r from-brand-600 to-brand-700 p-8 text-white shadow-premium sm:p-12">
+                    <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+                        <div class="max-w-2xl">
+                            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-100">No vendemos plantillas</p>
+                            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
+                                Empieza con una auditoría, no con una improvisación.
+                            </h2>
+                        </div>
+
+                        <a href="https://wa.me/34694258700" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-base font-semibold text-brand-700 shadow-soft transition hover:bg-slate-100 whitespace-nowrap">
+                            Solicitar auditoría
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="border-t border-slate-200 bg-slate-900 text-white">
+        <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr_1fr]">
+                <div>
+                    <div class="text-2xl font-bold text-brand-400">⚙️ GM Smart Solutions</div>
+                    <p class="mt-5 max-w-sm text-sm leading-7 text-slate-300">
+                        Automatización, IA y desarrollo de software a medida para PYMES que quieren mejorar eficiencia y escalar beneficios.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white">Contacto directo</h3>
+                    <ul class="mt-5 space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <span class="text-brand-400">📱</span>
+                            <a href="tel:+34694258700" class="hover:text-white transition">+34 694 258 700</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-brand-400">📧</span>
+                            <a href="mailto:garciamonco.proyectos@gmail.com" class="hover:text-white transition break-all">garciamonco.proyectos@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-brand-400">💬</span>
+                            <a href="https://wa.me/34694258700" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">WhatsApp directo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white">Responsable</h3>
+                    <div class="mt-5">
+                        <p class="text-base font-bold text-white">Pablo García-Moncó</p>
+                        <p class="mt-2 text-sm text-slate-400">Consultor y fundador</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-slate-800 pt-6 text-center text-sm text-slate-400">
+                © 2026 GM Smart Solutions. Soluciones tecnológicas para PYMES.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
